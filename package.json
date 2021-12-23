@@ -1,0 +1,23 @@
+{
+    "name": "nodeApp",
+    "description": "",
+    "version": "1.0.0",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/vjsairam/nodeApp.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/vjsairam/nodeApp/issues"
+    },
+    "homepage": "https://github.com/vjsairam/nodeApp",
+    "dependencies": {
+        "ronin-mocks": "^0.1.4",
+        "ronin-server": "^0.1.3"
+      }
+}
