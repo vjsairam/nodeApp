@@ -3,7 +3,8 @@
     "description": "",
     "version": "1.0.0",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "mocha test.js --timeout 60000 --exit",
+      "debug": "nodemon --inspect=0.0.0.0:8080 server.js"
     },
     "repository": {
       "type": "git",
@@ -17,7 +18,8 @@
     },
     "homepage": "https://github.com/vjsairam/nodeApp",
     "dependencies": {
-        "ronin-mocks": "^0.1.4",
+        "nodemon": "^2.0.7",
+        "ronin-mocks": "^0.1.6",
         "ronin-server": "^0.1.3"
       }
 }
