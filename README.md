@@ -2,7 +2,9 @@
 #
 ##### Prerequisites - 
 Docker and Minikube running locally
+
 Free Docker Account 
+
 Node.js version 12.18 or later
 #
 ##### Make Scripts - 
