@@ -5,11 +5,11 @@ build:
 
 .PHONY: build-docker
 build-docker: build-docker
-	docker build -t lirgautaemnnzn/node-app:0.2 .
+	docker build --no-cache -t lirgautaemnnzn/node-app:0.3 . 
 
 .PHONY: push-docker
 push-docker: build-docker push-docker
-	docker push lirgautaemnnzn/node-app:0.2
+	docker push lirgautaemnnzn/node-app:0.3
 
 .PHONY: k8s-deploy
 k8s-deploy: build-docker push-docker k8s-deploy

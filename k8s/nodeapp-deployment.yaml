@@ -23,7 +23,9 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: "lirgautaemnnzn/node-app:0.1"
+        image: "lirgautaemnnzn/node-app:0.3"
+        ports:
+        - containerPort: 8000
         resources:
           requests:
             cpu: "1"

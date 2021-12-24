@@ -3,22 +3,18 @@ kind: Ingress
 metadata:
   name: node-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  defaultBackend:
-    service:
-      name: default-http-backend
-      port:
-        number: 80
   rules:
     - host: local-ecosia.org
       http:
         paths:
-          - path: /tree
+          - path: /
             pathType: Prefix
             backend:
               service:
                 name: node-app
                 port:
-                  number: 8080
+                  number: 80
 
+# curl local-ecosia.org/tree

@@ -1,14 +1,13 @@
-FROM node:14.16.0
+FROM node:12.18.1
  
 WORKDIR /app
  
 COPY ["package.json", "package-lock.json*", "./"]
 
-COPY test/test.js .
-
-RUN npm install -g mocha && npm install && npm test
+RUN npm install
  
 COPY . .
  
 CMD [ "node", "server.js" ]
 
+EXPOSE 8000
